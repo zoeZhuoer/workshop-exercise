@@ -5,9 +5,19 @@
   <title>My first styled page</title>
   <link rel="stylesheet" href="mystyle.css">
 
+   <script>
+  function show_topic() {
+  var x = document.getElementById("demo");
+  x.style.fontSize = "50px";
+ x.style.color = "yellow";
+ }
+</script>
+
 </head>
 
 <body>
+  <p id="demo">Click the button to change the color and
+font style of this line.</p> 
 
 <!-- Site navigation menu -->
 <ul class="navbar">
@@ -33,5 +43,6 @@ what yet.
 <address>Made 5 April 2004<br>
   by myself.</address>
 
+<button onclick="show_topic()"> the button!</button>
 </body>
 </html>
